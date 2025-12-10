@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Working Hours</title>
+    <link rel="stylesheet" href="working_hours.css">
+</head>
+<body>
+
+    <div class="header">Your Working Hours</div>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>Today's Hours</h2>
+            <p id="todayHours">Loading...</p>
+        </div>
+
+        <div class="box">
+            <h2>Weekly Summary</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Total Hours</th>
+                </tr>
+                <tr><td>Monday</td><td>8 hrs</td></tr>
+                <tr><td>Tuesday</td><td>7 hrs</td></tr>
+                <tr><td>Wednesday</td><td>8 hrs</td></tr>
+                <tr><td>Thursday</td><td>6 hrs</td></tr>
+                <tr><td>Friday</td><td>7.5 hrs</td></tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script>
+        // This will later get today's total hours from your backend
+        // For now it's static
+        document.getElementById("todayHours").innerHTML = "7 hours 45 minutes";
+    </script>
+
+</body>
+</html>

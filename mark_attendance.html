@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+
+    <div class="header">Mark Attendance</div>
+
+    <div class="container">
+
+        <h2>Attendance</h2>
+
+        <button class="btn" onclick="checkIn()">Check In</button>
+        <button class="btn" onclick="checkOut()">Check Out</button>
+
+        <div class="status-box" id="statusText">
+            Status: Not Checked In
+        </div>
+
+    </div>
+
+    <script>
+        function checkIn() {
+            document.getElementById("statusText").innerHTML =
+                "Status: You have checked in at " + new Date().toLocaleTimeString();
+        }
+
+        function checkOut() {
+            document.getElementById("statusText").innerHTML =
+                "Status: You have checked out at " + new Date().toLocaleTimeString();
+        }
+    </script>
+
+</body>
+</html>
